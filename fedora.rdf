@@ -15,7 +15,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://fcrepo.org/respository">
+    <owl:Ontology rdf:about="http://fcrepo.org/repository#">
         <rdfs:label xml:lang="en">Fedora Commons Repository Ontology</rdfs:label>
         <rdfs:comment xml:lang="en">A first attempt to formalize an ontology for the Fedora data model, intended primarily to make it possible to expose Fedora-curated RDF predicates via de-reference-able URIs.</rdfs:comment>
     </owl:Ontology>
@@ -94,11 +94,6 @@
         <rdfs:label xml:lang="en">base version</rdfs:label>
         <rdfs:range rdf:resource="http://fcrepo.org/repository#Resource"/>
         <rdfs:domain rdf:resource="http://fcrepo.org/repository#Resource"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://fcrepo.org/repository#isContentOf">
-        <rdfs:label xml:lang="en">is content of</rdfs:label>
-        <rdfs:domain rdf:resource="http://fcrepo.org/repository#Content"/>
-        <rdfs:range rdf:resource="http://fcrepo.org/repository#Datastream"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:about="http://fcrepo.org/repository#predecessors">
         <rdfs:label xml:lang="en">predecessors</rdfs:label>
