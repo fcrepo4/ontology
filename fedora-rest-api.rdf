@@ -11,7 +11,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://fcrepo.org/repository/rest-api">
+    <owl:Ontology rdf:about="http://fcrepo.org/repository/rest-api#">
         <rdfs:label xml:lang="en">Fedora Commons REST API Ontology</rdfs:label>
         <rdfs:comment xml:lang="en">Describes properties used within the Fedora Commons Repository REST API..</rdfs:comment>
     </owl:Ontology>
