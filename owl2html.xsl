@@ -4,7 +4,7 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <xsl:output method="xml"/>
+  <xsl:output method="html"/>
   <xsl:variable name="title" select="/rdf:RDF/owl:Ontology/rdfs:label"/>
   <xsl:variable name="about" select="/rdf:RDF/owl:Ontology/@rdf:about"/>
   <xsl:template match="/">
