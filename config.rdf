@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="owl2html.xsl"?>
+<rdf:RDF 
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    <owl:Ontology rdf:about="http://fedora.info/definitions/v4/config#">
+        <rdfs:label xml:lang="en">Fedora Commons Configuration Ontology</rdfs:label>
+        <rdfs:comment xml:lang="en">Ontology for user-defined configuration properties and classes on Fedora-curated resources.</rdfs:comment>
+    </owl:Ontology>
+
+    <owl:ObjectProperty rdf:about="http://fedora.info/definitions/v4/config#hasIndexingTransform">
+        <rdfs:label xml:lang="en">has indexing transform</rdfs:label>
+        <rdfs:domain rdf:resource="http://fcrepo.info/definitions/v4/repository#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Specifies an ld-path indexing transform</rdfs:comment>
+    </owl:ObjectProperty>
+
+    <owl:Class rdf:about="http://fedora.info/definitions/v4/config#Indexable">
+        <rdfs:label xml:lang="en">indexable resource</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://fedora.info/definitions/v4/repository#Resource"/>
+        <rdfs:comment xml:lang="en">A resource that has been marked as indexable.</rdfs:comment>
+    </owl:Class>
+
+</rdf:RDF>
