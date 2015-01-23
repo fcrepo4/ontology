@@ -61,7 +61,7 @@
                 <includes>
                   <include>index.xml</include>
                 </includes>
-                <stylesheet>owl2html.xsl</stylesheet>
+                <stylesheet>index2html.xsl</stylesheet>
                 <outputDir>${project.build.directory}/html</outputDir>
                 <fileMappers>
                   <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">

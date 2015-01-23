@@ -9,25 +9,23 @@
     <rdf:Description rdf:about="http://fedora.info/definitions/v4/indexing#">
       <dcterms:title xml:lang="en">Fedora Commons Indexing Ontology</dcterms:title>
       <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-23</dcterms:modified>
-      <dcterms:publisher rdf:resource="http://fedora.info"/>
+      <dcterms:publisher rdf:resource="http://fedorarepository.org/"/>
       <rdfs:seeAlso rdf:resource="https://wiki.duraspace.org/display/FEDORA4x/External+Search"/>
       <rdfs:comment xml:lang="en">Ontology for indexing configuration in Fedora repositories.</rdfs:comment>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://fedora.info/definitions/v4/indexing#hasIndexingTransformation">
+    <rdf:Property rdf:about="http://fedora.info/definitions/v4/indexing#hasIndexingTransformation">
       <rdfs:label xml:lang="en">has indexing transformation</rdfs:label>
       <rdfs:comment xml:lang="en">Specifies an indexing transformation</rdfs:comment>
       <rdfs:domain rdf:resource="http://fedora.info/definitions/v4/indexing#Indexable"/>
-      <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
       <rdfs:isDefinedBy rdf:resource="http://fedora.info/definitions/v4/indexing#"/>
-    </rdf:Description>
+    </rdf:Property>
 
-    <rdf:Description rdf:about="http://fedora.info/definitions/v4/indexing#Indexable">
+    <rdfs:Class rdf:about="http://fedora.info/definitions/v4/indexing#Indexable">
       <rdfs:label xml:lang="en">indexable resource</rdfs:label>
       <rdfs:comment xml:lang="en">A resource that has been marked as indexable.</rdfs:comment>
-      <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
       <rdfs:subClassOf rdf:resource="http://fedora.info/definitions/v4/repository#Resource"/>
       <rdfs:isDefinedBy rdf:resource="http://fedora.info/definitions/v4/indexing#"/>
-    </rdf:Description>
+    </rdfs:Class>
 
 </rdf:RDF>
