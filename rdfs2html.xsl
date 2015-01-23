@@ -109,7 +109,7 @@
       <xsl:value-of select="substring-after(@rdf:about,$about)"/>
     </xsl:variable>
     <xsl:if test="$id != ''">
-      <h3 id="{$id}"><xsl:value-of select="$id"/></h3>
+      <h4 id="{$id}"><xsl:value-of select="$id"/></h4>
       <ul>
         <li>Label: <xsl:value-of select="rdfs:label"/></li>
         <xsl:if test="rdfs:comment != ''">
