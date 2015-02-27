@@ -46,6 +46,7 @@
                 <dir>.</dir>
                 <includes>
                   <include>indexing.rdf</include>
+                  <include>models.rdf</include>
                 </includes>
                 <stylesheet>rdfs2html.xsl</stylesheet>
                 <outputDir>${project.build.directory}/html</outputDir>
