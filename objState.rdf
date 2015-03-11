@@ -9,14 +9,14 @@
 ]>
 
 
-<rdf:RDF xmlns="http://fedora.info/definitions/1/0/access/"
+<rdf:RDF xmlns="http://fedora.info/definitions/1/0/access/objState"
      xml:base="http://fedora.info/definitions/1/0/access"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-     <owl:Ontology rdf:about="http://fedora.info/definitions/1/0/access/">
+     <owl:Ontology rdf:about="http://fedora.info/definitions/1/0/access/objState">
         <rdfs:label xml:lang="en">Fedora Commons Repository - Object Status Property</rdfs:label>
         <rdfs:comment xml:lang="en">Object status property</rdfs:comment>
         <owl:versionInfo>v4/2015/03/10</owl:versionInfo>
