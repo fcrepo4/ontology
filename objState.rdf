@@ -31,7 +31,7 @@
 
     <owl:Class rdf:about="http://fedora.info/definitions/1/0/access/ResourceStatus">
       <rdfs:label xml:lang="en">resource state</rdfs:label>
-      <rdfs:comment xml:lang="en">Values of the state property. The default values are active and deleted -- but additional values can be created.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Values of the state property. The out-of-the-box values are active and deleted -- but additional values can be created.</rdfs:comment>
     </owl:Class>
 
     <owl:NamedIndividual rdf:about="http://fedora.info/definitions/1/0/access/active">
