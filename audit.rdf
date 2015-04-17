@@ -68,4 +68,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </owl:NamedIndividual>
 
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <owl:NamedIndividual rdf:about="http://fedora.info/definitions/v4/audit#contentModification"/>
+      <owl:NamedIndividual rdf:about="http://fedora.info/definitions/v4/audit#contentRemoval"/>
+      <owl:NamedIndividual rdf:about="http://fedora.info/definitions/v4/audit#metadataModification"/>
+      <owl:NamedIndividual rdf:about="http://fedora.info/definitions/v4/audit#resourceModification"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+
 </rdf:RDF>
