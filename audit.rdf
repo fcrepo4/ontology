@@ -63,7 +63,7 @@
     <skos:definition xml:lang="en">A content file or metadata is modified.</skos:definition>
     <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/preservation/eventType"/>
     <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/preservation"/>
-    <skos:narrower rdf:resource="http://fedora.info/definitions/v4/audit#bitstreamModification"/>
+    <skos:narrower rdf:resource="http://fedora.info/definitions/v4/audit#contentModification"/>
     <skos:narrower rdf:resource="http://fedora.info/definitions/v4/audit#metadataModification"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </owl:NamedIndividual>
