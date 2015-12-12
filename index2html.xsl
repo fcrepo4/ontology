@@ -11,11 +11,16 @@
       <head>
         <title><xsl:value-of select="pages/@title"/></title>
         <style>
+          body { width: 80%; margin: 0 auto; }
+          body { font-family: sans-serif; background: url(assets/cream_pixels.png);}
+          header { text-align: center; }
           h1 { font-size: large; }
-          body { font-family: sans-serif; }
         </style>
       </head>
       <body>
+        <header>
+          <img src="assets/fedora_logo.png"/>
+        </header>
         <h1><xsl:value-of select="pages/@title"/></h1>
         <ul>
           <xsl:for-each select="pages/page">
