@@ -37,6 +37,7 @@
                 <dir>.</dir>
                 <includes>
                   <include>repository.rdf</include>
+                  <include>fcrepo.rdf</include>
                 </includes>
                 <stylesheet>owl2html.xsl</stylesheet>
                 <outputDir>${project.build.directory}/html</outputDir>

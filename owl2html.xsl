@@ -136,9 +136,15 @@
         </xsl:when>
       </xsl:choose>
     </xsl:variable>
+    <xsl:variable name="prefix">
+      <xsl:choose>
+        <xsl:when test="starts-with(@rdf:about,'http://fedora.info/definitions/fcrepo#')">fcrepo:</xsl:when>
+        <xsl:when test="starts-with(@rdf:about,'http://fedora.info/definitions/v4/repository#')">fedora:</xsl:when>
+      </xsl:choose>
+    </xsl:variable>
     <xsl:choose>
       <xsl:when test="$id != ''">
-        <a href="#{$id}">fedora:<xsl:value-of select="$id"/></a>
+        <a href="#{$id}"><xsl:value-of select="$prefix"/><xsl:value-of select="$id"/></a>
       </xsl:when>
       <xsl:when test="contains(@rdf:resource,'http://www.w3.org/2001/XMLSchema#')">
         <a href="{@rdf:resource}">xsd:<xsl:value-of select="substring-after(@rdf:resource,'#')"/></a>
@@ -151,10 +157,16 @@
   </xsl:template>
   <xsl:template name="description">
     <xsl:variable name="id" select="substring-after(@rdf:about,$about)"/>
+    <xsl:variable name="prefix">
+      <xsl:choose>
+        <xsl:when test="starts-with(@rdf:about,'http://fedora.info/definitions/fcrepo#')">fcrepo:</xsl:when>
+        <xsl:when test="starts-with(@rdf:about,'http://fedora.info/definitions/v4/repository#')">fedora:</xsl:when>
+      </xsl:choose>
+    </xsl:variable>
     <div id="{$id}">
       <table>
         <tr>
-          <th colspan="2">fedora:<xsl:value-of select="$id"/></th>
+          <th colspan="2"><xsl:value-of select="$prefix"/><xsl:value-of select="$id"/></th>
         </tr>
         <tr class="about">
           <td>URI</td>
