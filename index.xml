@@ -4,6 +4,7 @@
 <index>
   <pages title="Fedora Ontologies">
     <page id="Fedora Commons Repository Ontology" url="definitions/v4/repository"/>
+    <page id="Fedora API Ontology" url="definitions/fcrepo"/>
   </pages>
   <items>
     <item id="Fedora Home" url="http://fedorarepository.org"/>

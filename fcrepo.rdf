@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="owl2html.xsl"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://fedora.info/definitions/fcrepo#"
+    xml:base="http://fedora.info/definitions/fcrepo"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ldp="http://www.w3.org/ns/ldp#">
+    <owl:Ontology rdf:about="http://fedora.info/definitions/fcrepo#">
+        <rdfs:label xml:lang="en">Fedora API Ontology</rdfs:label>
+        <rdfs:comment xml:lang="en">Ontology for terms in the Fedora API Specification</rdfs:comment>
+        <owl:versionInfo>2017/10/05</owl:versionInfo>
+    </owl:Ontology>
+
+    <!-- http://fedora.info/definitions/fcrepo#VersionedResource -->
+
+    <owl:Class rdf:about="http://fedora.info/definitions/fcrepo#VersionedResource">
+        <rdfs:label xml:lang="en">A Memento of a Fedora resource (LDPRm).</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ldp#Resource"/>
+    </owl:Class>
+
+</rdf:RDF>
